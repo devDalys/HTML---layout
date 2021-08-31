@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+.promo{
+    height: 802px;
+    background: url(../img/promo_bg.jpg) center center/cover no-repeat;
+}
+.promo__logo{
+    padding-top: 38px;
+    padding-bottom: 10px;
+}
+.promo__logo-pic{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.text__logo{
+    display: block;
+    width: 201px;
+    height: 24px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 53px;
+}
+.promo__title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 41px;
+    display: block;
+    margin: 0 auto;
+    color: #F9BF3B;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+.title__big{
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    position: relative;
+    overflow: hidden;
+}
+.title__big::before {
+    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width:1000px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 1px solid #fffffff0;   /* бордер псевдо дива, т.е. сама линия */
+    top: 50%;                         /* позиционирование по вертикали */
+    right: 74%;                    /* позиционирование по горизонтали */
+}
+.title__big::after {
+    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width:1000px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 1px solid #fffffff0;   /* бордер псевдо дива, т.е. сама линия */
+    top: 50%;                         /* позиционирование по вертикали */
+    left: 74%;                    /* позиционирование по горизонтали */
+}
+.title__bottom{
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 41px;
+    text-align: center;
+    color: #F9BF3B;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+}
+
+.promo__text{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    padding-bottom: 96px;
+}
+.promo__span{
+    color:#F9BF3B ;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.promo__btn{
+    display: inline-block;
+    min-width: max-content;
+    padding: 0 29px;
+    margin:0 414px;
+    border:0;
+    height: 72px;
+    box-shadow: -8px -12px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    outline: none;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.promo__button{
+    text-align: center;   
+}
+.promo__btn:hover, .promo__btn:active, .promo__btn:target{
+    background: #0e9dc9;
+}
+.more__info-title{
+    width: 264px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+.more__info-text{
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 15px;
+    
+
+}
+.down__arrrow-pic{
+    margin-top: 100px;
+    display: block;
+    margin: 5px auto;
+}
+.section__cards{
+    background-color: #EFEFEF;
+}
+.waiting{
+    position: relative;
+    padding-top: 88px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    color: #4A4A4A;
+}
+.waiting::after{
+    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width:220px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 4px solid #F9BF3B;;   /* бордер псевдо дива, т.е. сама линия */
+    top: 100%;                         /* позиционирование по вертикали */
+    left: 45%;                    /* позиционирование по горизонтали */
+}
+
+.waiting__text{
+    padding-top:19px ;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+    padding-bottom: 45px;
+}
+.card{
+    width: calc(100% / 3);
+    padding: 0 24px 0 24px;
+}
+.card_pic{
+    width: 100%;
+}
+.card__desc{
+    margin-top: 26px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 74px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 75px;
+}
+
+.optimisation{
+    min-height: 502px;
+    padding-top: 63px;
+    position: relative;
+    padding-left: 391px;  
+}
+.wooman__bg{
+    position: absolute;
+    top: 0px;
+    left: -240px;
+    
+}
+.opt__title{
+    position: relative;
+    z-index: 1;
+}
+.opt__title-text{
+   
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+    color: #299CBD;
+    margin-bottom: 14px;
+}
+.opt__info{
+    
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+.opt__info.bolt{
+    font-weight: 700;
+}
+.section__learning{
+    padding-top: 86px;
+    background: url(/project2/img/second_bg.jpg) no-repeat center;
+
+}
+.title__learning{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+    margin-bottom: 64px;
+}
+.title__learning::after{
+    margin-top: 15px;
+    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width:220px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 4px solid #F9BF3B;;   /* бордер псевдо дива, т.е. сама линия */
+    top: 100%;                         /* позиционирование по вертикали */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.learn__cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.learn__card{
+    width: calc(100% / 5);
+    padding: 0 6px 0 6px;
+    
+}
+.div__circle{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background-color: #B4E2FF;
+    margin-bottom: 25px;
+}
+.learn__desc{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 69px;
+ 
+}
+.section__bonus{
+    background-color: #EFEFEF;
+}
+.bonus{
+    padding-top: 88px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+.info__bonus{
+    text-align: center;
+    font-size: 30px;
+    line-height: 43px;
+    padding-bottom: 51px;
+}
+.promo-btn{
+    padding-top: 0px;
+    padding-bottom: 88px;
+}
+.date-pic{
+    display: block;
+    width: 342px;
+    margin: 0 auto;
+    margin-top: 89px;
+    padding-bottom: 36px;
+    
+}
+.first{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.date{
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 25px;
+}
+.first__more{
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    font-size: 23px;
+    line-height: 20px;
+    padding-bottom: 51px;
+}
+.section__footer{
+    background-color: #1A1A1A;
+}
+.contacts{
+    padding-top: 57px;
+    padding-bottom: 69px;
+    text-align: center;
+    
+}
+.supp{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+    text-decoration: none;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.politics{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+    text-decoration: none;
+    padding-bottom: 2px;
+    text-decoration-line: underline;
+}
+
+.number{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+    text-decoration: none;
+}
