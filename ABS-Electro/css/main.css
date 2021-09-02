@@ -117,6 +117,7 @@
     display: flex;
 }
 .red__box{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -323,6 +324,7 @@
     height: 36px;
     border: 0;
     background: #fff;
+    transition: background 0.2s;
     cursor: pointer;
 }
 .main__menu-icon{
@@ -591,6 +593,7 @@
     display: flex;
 }
 .social{
+    cursor: pointer;
     margin-right: 14px;
     display: flex;
     align-items: center;
@@ -623,5 +626,6 @@
     color: #2B2A29;
 }
 .politicy-icons{
+    cursor: pointer;
     margin-left: 16px;
 }
