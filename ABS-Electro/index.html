@@ -179,29 +179,34 @@
                         </div>
                         <div class="personal__data_section">
                             <h2 class="status__section-title">Личные данные</h2>
-                            <form action="#!" method="post" class="form">
+                            <form  class="form"> 
                                 <div class="user_input">
-                                    <input type="text" name="user_family" id="user_family" class="input">
+                                    <input type="text" name="user_family" id="user_family" class="inputOfForm">
                                     <div class="input_info">Фамилия <span>*</span></div>
+                                    <div class="error hide">Введите данные</div>
                                 </div>
                                 <div class="user_input">
-                                    <input type="tel" name="user_number" id="user_number" class="input">
+                                    <input type="tel" name="user_number" id="user_number" class="inputOfForm">
                                     <div class="input_info">Номер телефона <span>*</span></div>
+                                    <div class="error hide">Введите данные</div>
                                 </div>
                                 <div class="user_input">
-                                    <input type="text" name="user_name" id="user_name" class="input">
+                                    <input type="text" name="user_name" id="user_name" class="inputOfForm">
                                     <div class="input_info">Имя <span>*</span></div>
+                                    <div class="error hide">Введите данные</div>
                                 </div>
                                 <div class="user_input">
-                                    <input type="email" name="user_email" id="user_email" class="input">
+                                    <input type="email" name="user_email" id="user_email" class="inputOfForm">
                                     <div class="input_info">E-mail <span>*</span></div>
+                                    <div class="error hide">Введите данные</div>
                                 </div>
                                 <div class="user_input">
-                                    <input type="text" name="user_lastname" id="user_lastname" class="input">
+                                    <input type="text" name="user_lastname" id="user_lastname" class="inputOfForm">
                                     <div class="input_info">Отчество <span>*</span></div>
+                                    <div class="error hide">Введите данные</div>
                                 </div>
                                 <div class="form_btns">
-                                    <button type="submit"  class="form_btn">Сохранить</button>
+                                    <button class="form_btn">Сохранить</button>
                                     <button type="reset" class="form_btn grey">Сбросить</button>
                                 </div>
                                 
@@ -222,15 +227,17 @@
                                 <h2 class="status__section-title">Пароль для входа по E-mail</h2>
                                 <form action="#!" method="post" class="form">
                                     <div class="user_input">
-                                        <input type="password" name="user_number" id="user_number" class="input">
+                                        <input type="password" name="user_password" id="user_password" class="input">
                                         <div class="input_info">Пароль <span>*</span></div>
+                                        <div class="error hide">Введите пароль</div>
                                     </div>
                                     <div class="user_input">
-                                        <input type="password" name="user_name" id="user_name" class="input">
+                                        <input type="password" name="comfirm_password" id="comfirm_password" class="input">
                                         <div class="input_info">Подтвердите пароль <span>*</span></div>
+                                        <div class="error hide">Введите пароль повторно</div>
                                     </div>
                                     <div class="form_btns">
-                                        <button type="submit"  class="form_btn">Сохранить</button>
+                                        <button type="submit "  class="form_btn pass">Сохранить</button>
                                         <button type="reset" class="form_btn grey">Сбросить</button>
                                     </div>
                                 </form>
@@ -327,5 +334,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/main.js"></script>
 </body>
 </html>
