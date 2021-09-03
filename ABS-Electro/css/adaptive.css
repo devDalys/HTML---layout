@@ -71,8 +71,35 @@
     .main__panel-right{
         width: 64%;
     }
+    
+    
     /* .header__main-section-bot * {
         font-size: 11px;
     } */
 }
-
+@media screen and (min-width:768px) and (max-width:1024px ){
+    .header-bordor{
+        display: none;
+    }
+    .mobile__header{
+        display: flex;
+    }
+    .mobile{
+        display: flex;
+    }
+    .main__panel-left{
+        display: none;
+    }
+    .container{
+        padding-left: 16px;
+    }
+    .destop__footer{
+        display: none;
+    }
+    .container{
+        width: 732px;
+    }
+    .main__panel-right{
+        width: 100%;
+    }
+}

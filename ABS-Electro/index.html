@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/adaptive.css">
 </head>
+
 <body>
     <header class="header-bordor">
-            <div class="container">
+        <div class="container">
             <div class="top__menu">
 
                 <div class="address">
@@ -60,7 +62,8 @@
                             <span class="catalog-text">КАТАЛОГ</span>
                         </button>
                         <div class="find__catalog">
-                            <input type="text" class="find__catalog-input" placeholder="Введите наименование, артикул, серию" >
+                            <input type="text" class="find__catalog-input"
+                                placeholder="Введите наименование, артикул, серию">
                             <button class="find__catalog_btn">
                                 <img src="./img/find.svg" alt="" class="find__catalog_btn-icon">
                             </button>
@@ -92,7 +95,7 @@
                             <a href="tel:+74732460000" class="call-number">+7 (473) 246-00-00</a>
                             <a href="#!" class="number__callback">Заказать звонок</a>
                             <span class="number-subtext">с 9:00 до 19:00</span>
-                            
+
                         </div>
                         <div class="email">
                             <img src="./img/email-icon.svg" alt="" class="email-icon">
@@ -106,235 +109,341 @@
                 </div>
             </div>
         </div>
-        </header>
-        <main class="main_section">
-            <div class="container">
-                <h1 class="personal__title">Личный кабинет</h1>
-                <div class="menu__titles_section">
-                    <h2 class="menu__titles_section-title">Главная&nbsp;/&nbsp;</h2>
-                    <h2 class="menu__titles_section-title">Личный кабинет&nbsp;/&nbsp;</h2>
-                    <h2 class="menu__titles_section-title">Личные данные</h2>
+    </header>
+
+    <header class="mobile__header">
+        <div class="header__mobile-top">
+            <img src="./img/mobile-logo.png" alt="" class="mobile-logo">
+            <div class="address">
+                <div class="address__city mobile__address">
+                    <img src="./img/address-icon.svg" alt="" class="address__city-img">
+                    <span class="address__city-text mobile-city">Воронеж</span>
                 </div>
-                <div class="main__panel">
-                    <div class="main__panel-left">
-                        <button class="main__menu_item">
-                            <img src="./img/personal__data.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Личные данные</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/myaddress.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Мои адреса</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/notify.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Уведомления</span>
-                            <span class="notify-count">2</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/orders.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Заказы</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/bonuses.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Бонусный счет</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/loyality-icon.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Программа лояльности</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/promo-icon.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Избранное</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/catalog_gifts.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Каталог подарков</span>
-                        </button>
-                        <button class="main__menu_item">
-                            <img src="./img/logout.svg" alt="" class="main__menu-icon">
-                            <span class="main__menu-text">Выйти</span>
-                        </button>
+                <div class="address__street mobile__address">
+                    <img src="./img/street-icon.svg" alt="" class="adress__street-img">
+                    <span class="adress__street-text">ул. Текстильщиков, 2и</span>
+                </div>
+            </div>
+            <button class="catalog mobile__btns">
+                <span class="catalog-text">Каталог</span>
+                <img src="./img/catalog-icon.svg" alt="" class="catalog-pick">
+            </button>
+            <button class="catalog mobile__btns">
+                <span class="catalog-text">Меню</span>
+                <img src="./img/catalog-icon.svg" alt="" class="catalog-pick">
+            </button>
+        </div>
+        <div class="mobile__find_section">
+            <div class="find__catalog mobile__find">
+                <input type="text" class="find__catalog-input"
+                    placeholder="Введите наименование, артикул, серию">
+                <button class="find__catalog_btn">
+                    <img src="./img/find.svg" alt="" class="find__catalog_btn-icon">
+                </button>
+            </div>
+            <div class="header__main_btns mobile_header__main_btns">
+                <button class="compare header_btns">
+                    <img src="./img/compare.svg" alt="" class="compare-icon">
+                </button>
+                <button class="specs header_btns">
+                    <img src="./img/specs.svg" alt="" class="specs-icon">
+                </button>
+                <button class="basket header_btns">
+                    <img src="./img/basket.svg" alt="" class="basket-icon">
+                    <span class="basket-count">10</span>
+                </button>
+            </div>
+            <span class="total__price">10 000,00 &#8381;</span>
+        </div>
+        
+    </header>
+
+    <main class="main_section">
+        <div class="container">
+            <h1 class="personal__title">Личный кабинет</h1>
+            <div class="menu__titles_section">
+                <h2 class="menu__titles_section-title">Главная&nbsp;/&nbsp;</h2>
+                <h2 class="menu__titles_section-title">Личный кабинет&nbsp;/&nbsp;</h2>
+                <h2 class="menu__titles_section-title">Личные данные</h2>
+            </div>
+            <div class="main__panel">
+                <div class="main__panel-left">
+                    <button class="main__menu_item">
+                        <img src="./img/personal__data.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Личные данные</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/myaddress.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Мои адреса</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/notify.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Уведомления</span>
+                        <span class="notify-count">2</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/orders.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Заказы</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/bonuses.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Бонусный счет</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/loyality-icon.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Программа лояльности</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/promo-icon.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Избранное</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/catalog_gifts.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Каталог подарков</span>
+                    </button>
+                    <button class="main__menu_item">
+                        <img src="./img/logout.svg" alt="" class="main__menu-icon">
+                        <span class="main__menu-text">Выйти</span>
+                    </button>
+                </div>
+                <div class="main__panel-right">
+                    <div class="status__section">
+                        <div class="status__section-status">
+                            <h2 class="status__section-title">Статус аккаунта</h2>
+                            <span class="status__section-subtitle">Базовый</span>
+                        </div>
+                        <h3 class="status__section-info">Чтобы получить стутаус «Профи», ваш ежеквартальный оборот
+                            должен быть выше 9 999 ₽.</h3>
+                        <div class="progress_bar">
+                            <span class="progress_bar-summ">60 325 &#8381;</span>
+                            <div class="progress_bar-line">
+                                <div class="progress_bar-inline"></div>
+                            </div>
+
+                        </div>
+                        <div class="status__section_money">
+                            <span class="status__section_money-info">Ваш оборот в текущем квартале:</span>
+                            <span class="status__section_money-result">60 325</span>
+                        </div>
+                        <div class="status__section_money">
+                            <span class="status__section_money-info">Расчетный период: </span>
+                            <span class="status__section_money-result">1.07.2020 - 31.09.2020</span>
+                        </div>
                     </div>
-                    <div class="main__panel-right">
-                        <div class="status__section">
-                            <div class="status__section-status">
-                                <h2 class="status__section-title">Статус аккаунта</h2>
-                                <span class="status__section-subtitle">Базовый</span>
+                    <div class="personal__data_section">
+                        <h2 class="status__section-title">Личные данные</h2>
+                        <form class="form">
+                            <div class="user_input">
+                                <input type="text" name="user_family" id="user_family" class="inputOfForm">
+                                <div class="input_info">Фамилия <span>*</span></div>
+                                <div class="error hide">Введите данные</div>
                             </div>
-                            <h3 class="status__section-info">Чтобы получить стутаус «Профи», ваш ежеквартальный оборот должен быть выше 9 999 ₽.</h3>
-                            <div class="progress_bar">
-                                <span class="progress_bar-summ">60 325 &#8381;</span>
-                                <div class="progress_bar-line">
-                                    <div class="progress_bar-inline"></div>
-                                </div>
-                                
+                            <div class="user_input">
+                                <input type="tel" name="user_number" id="user_number" class="inputOfForm">
+                                <div class="input_info">Номер телефона <span>*</span></div>
+                                <div class="error hide">Введите данные</div>
                             </div>
-                            <div class="status__section_money">
-                                <span class="status__section_money-info">Ваш оборот в текущем квартале:</span>
-                                <span class="status__section_money-result">60 325</span>
+                            <div class="user_input">
+                                <input type="text" name="user_name" id="user_name" class="inputOfForm">
+                                <div class="input_info">Имя <span>*</span></div>
+                                <div class="error hide">Введите данные</div>
                             </div>
-                            <div class="status__section_money">
-                                <span class="status__section_money-info">Расчетный период: </span>
-                                <span class="status__section_money-result">1.07.2020 - 31.09.2020</span>
+                            <div class="user_input">
+                                <input type="email" name="user_email" id="user_email" class="inputOfForm">
+                                <div class="input_info">E-mail <span>*</span></div>
+                                <div class="error hide">Введите данные</div>
                             </div>
-                        </div>
-                        <div class="personal__data_section">
-                            <h2 class="status__section-title">Личные данные</h2>
-                            <form  class="form"> 
-                                <div class="user_input">
-                                    <input type="text" name="user_family" id="user_family" class="inputOfForm">
-                                    <div class="input_info">Фамилия <span>*</span></div>
-                                    <div class="error hide">Введите данные</div>
-                                </div>
-                                <div class="user_input">
-                                    <input type="tel" name="user_number" id="user_number" class="inputOfForm">
-                                    <div class="input_info">Номер телефона <span>*</span></div>
-                                    <div class="error hide">Введите данные</div>
-                                </div>
-                                <div class="user_input">
-                                    <input type="text" name="user_name" id="user_name" class="inputOfForm">
-                                    <div class="input_info">Имя <span>*</span></div>
-                                    <div class="error hide">Введите данные</div>
-                                </div>
-                                <div class="user_input">
-                                    <input type="email" name="user_email" id="user_email" class="inputOfForm">
-                                    <div class="input_info">E-mail <span>*</span></div>
-                                    <div class="error hide">Введите данные</div>
-                                </div>
-                                <div class="user_input">
-                                    <input type="text" name="user_lastname" id="user_lastname" class="inputOfForm">
-                                    <div class="input_info">Отчество <span>*</span></div>
-                                    <div class="error hide">Введите данные</div>
-                                </div>
-                                <div class="form_btns">
-                                    <button class="form_btn">Сохранить</button>
-                                    <button type="reset" class="form_btn grey">Сбросить</button>
-                                </div>
-                                
-                            </form>
+                            <div class="user_input">
+                                <input type="text" name="user_lastname" id="user_lastname" class="inputOfForm">
+                                <div class="input_info">Отчество <span>*</span></div>
+                                <div class="error hide">Введите данные</div>
+                            </div>
+                            <div class="form_btns">
+                                <button class="form_btn">Сохранить</button>
+                                <button type="reset" class="form_btn grey">Сбросить</button>
+                            </div>
 
-                        </div>
-                        <div class="business_section">
-                                <div class="business_section_title">
-                                    <img src="./img/buisness.svg" alt="" class="business_section_title-icon">
-                                    <h2 class="status__section-title">Аккаунт "Бизнес"</h2>
-                                </div>
-                                <p class="status__section_descr status__section-info">Чтобы подключить аккаунт «Бизнес», необходимо добавить компанию (юридическое лицо)<br> и придумать сюда нормальный текст.(Верстальщик не придумал)</p>
-                                <button class="form_btn add_company-btn">Добавить компанию</button>
+                        </form>
 
+                    </div>
+                    <div class="business_section">
+                        <div class="business_section_title">
+                            <img src="./img/buisness.svg" alt="" class="business_section_title-icon">
+                            <h2 class="status__section-title">Аккаунт "Бизнес"</h2>
                         </div>
+                        <p class="status__section_descr status__section-info">Чтобы подключить аккаунт «Бизнес»,
+                            необходимо добавить компанию (юридическое лицо)<br> и придумать сюда нормальный
+                            текст.(Верстальщик не придумал)</p>
+                        <button class="form_btn add_company-btn">Добавить компанию</button>
 
-                        <div class="LoginIntoEmail_section">
-                                <h2 class="status__section-title">Пароль для входа по E-mail</h2>
-                                <form action="#!" method="post" class="form">
-                                    <div class="user_input">
-                                        <input type="password" name="user_password" id="user_password" class="input">
-                                        <div class="input_info">Пароль <span>*</span></div>
-                                        <div class="error hide">Введите пароль</div>
-                                    </div>
-                                    <div class="user_input">
-                                        <input type="password" name="comfirm_password" id="comfirm_password" class="input">
-                                        <div class="input_info">Подтвердите пароль <span>*</span></div>
-                                        <div class="error hide">Введите пароль повторно</div>
-                                    </div>
-                                    <div class="form_btns">
-                                        <button type="submit "  class="form_btn pass">Сохранить</button>
-                                        <button type="reset" class="form_btn grey">Сбросить</button>
-                                    </div>
-                                </form>
-                        </div>
+                    </div>
+
+                    <div class="LoginIntoEmail_section">
+                        <h2 class="status__section-title">Пароль для входа по E-mail</h2>
+                        <form action="#!" method="post" class="form">
+                            <div class="user_input">
+                                <input type="password" name="user_password" id="user_password" class="input">
+                                <div class="input_info">Пароль <span>*</span></div>
+                                <div class="error hide">Введите пароль</div>
+                            </div>
+                            <div class="user_input">
+                                <input type="password" name="comfirm_password" id="comfirm_password" class="input">
+                                <div class="input_info">Подтвердите пароль <span>*</span></div>
+                                <div class="error hide">Введите пароль повторно</div>
+                            </div>
+                            <div class="form_btns">
+                                <button type="submit " class="form_btn pass">Сохранить</button>
+                                <button type="reset" class="form_btn grey">Сбросить</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer >
-            <div class="container footer">
-                <div class="footer_contacts">
-                    <div class="main__logo">
-                        <div class="red__box">
-                            <img src="./img/logo.svg" alt="" class="logo">
-                        </div>
-                        <img src="./img/sublogo.svg" alt="" class="sublogo">
+        </div>
+    </main>
+    <footer class="destop__footer">
+        <div class="container footer">
+            <div class="footer_contacts">
+                <div class="main__logo">
+                    <div class="red__box">
+                        <img src="./img/logo.svg" alt="" class="logo">
                     </div>
-                    <h4 class="footer_contacts-info">
-                        +7 (473) 246-00-00<br>
-                        8 800 555-88-59<br>
-                        eshop@avselectro.ru
-                    </h4>
+                    <img src="./img/sublogo.svg" alt="" class="sublogo">
                 </div>
-                <div class="footer_block">
-                    <h3 class="footer-title">О компании</h3>
-                    <a href="#!" class="footer-links">О нас</a>
-                    <a href="#!" class="footer-links">Новости и события</a>
-                    <a href="#!" class="footer-links">Вакансии "АВС-электро"</a>
-                    <a href="#!" class="footer-links">Сертификаты</a>
-                    <a href="#!" class="footer-links">Контакты</a>
+                <h4 class="footer_contacts-info">
+                    +7 (473) 246-00-00<br>
+                    8 800 555-88-59<br>
+                    eshop@avselectro.ru
+                </h4>
+            </div>
+            <div class="footer_block">
+                <h3 class="footer-title">О компании</h3>
+                <a href="#!" class="footer-links">О нас</a>
+                <a href="#!" class="footer-links">Новости и события</a>
+                <a href="#!" class="footer-links">Вакансии "АВС-электро"</a>
+                <a href="#!" class="footer-links">Сертификаты</a>
+                <a href="#!" class="footer-links">Контакты</a>
+            </div>
+            <div class="footer_block">
+                <h3 class="footer-title">Покупателям</h3>
+                <a href="#!" class="footer-links">Акции</a>
+                <a href="#!" class="footer-links">Доставка и оплата</a>
+                <a href="#!" class="footer-links">Гарантия и возврат</a>
+                <a href="#!" class="footer-links">Статьи и советы</a>
+                <a href="#!" class="footer-links">Программа лояльности</a>
+                <a href="#!" class="footer-links">Магазины и пункты выдачи</a>
+                <a href="#!" class="footer-links">F.A.Q.</a>
+                <a href="#!" class="footer-links">Golden Club</a>
+            </div>
+            <div class="footer_block">
+                <h3 class="footer-title">Услуги</h3>
+                <a href="#!" class="footer-links">Предприятиям</a>
+                <a href="#!" class="footer-links">Производителям электрощитов</a>
+                <a href="#!" class="footer-links">Монтажникам</a>
+                <a href="#!" class="footer-links">Франшиза</a>
+            </div>
+            <div class="footer__mailing">
+                <h3 class="footer__title">Мы объединяем профессионалов</h3>
+                <p class="footer__title-desc">Все лучшие предложения для наших подписчиков!</p>
+                <div class="footer__mailing-form">
+                    <input type="email" name="mailing" id="mailing" class="mailing_input">
+                    <button type="submit" class="mailing_submit">Подписаться</button>
                 </div>
-                <div class="footer_block">
-                    <h3 class="footer-title">Покупателям</h3>
-                    <a href="#!" class="footer-links">Акции</a>
-                    <a href="#!" class="footer-links">Доставка и оплата</a>
-                    <a href="#!" class="footer-links">Гарантия и возврат</a>
-                    <a href="#!" class="footer-links">Статьи и советы</a>
-                    <a href="#!" class="footer-links">Программа лояльности</a>
-                    <a href="#!" class="footer-links">Магазины и пункты выдачи</a>
-                    <a href="#!" class="footer-links">F.A.Q.</a>
-                    <a href="#!" class="footer-links">Golden Club</a>
-                </div>
-                <div class="footer_block">
-                    <h3 class="footer-title">Услуги</h3>
-                    <a href="#!" class="footer-links">Предприятиям</a>
-                    <a href="#!" class="footer-links">Производителям электрощитов</a>
-                    <a href="#!" class="footer-links">Монтажникам</a>
-                    <a href="#!" class="footer-links">Франшиза</a>
-                </div>
-                <div class="footer__mailing">
-                    <h3 class="footer__title">Мы объединяем профессионалов</h3>
-                    <p class="footer__title-desc">Все лучшие предложения для наших подписчиков!</p>
-                    <div class="footer__mailing-form">
-                        <input type="email" name="mailing" id="mailing" class="mailing_input">
-                        <button type="submit" class="mailing_submit">Подписаться</button>
+                <p class="submit__info">Нажимая кнопку “Подписаться”, я соглашаюсь<br> с условиями политики конфиденциальности и<br> пользовательского соглашения.</p>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="socialmedia">
+                <div class="social_left">
+                    <div class="social">
+                        <img src="./img/vk.svg" alt="" class="social-icon">
                     </div>
+                    <div class="social">
+                        <img src="./img/fb.svg" alt="" class="social-icon">
+                    </div>
+                    <div class="social">
+                        <img src="./img/ok.svg" alt="" class="social-icon">
+                    </div>
+                    <div class="social">
+                        <img src="./img/yt.svg" alt="" class="social-icon">
+                    </div>
+                    <div class="social">
+                        <img src="./img/insta.svg" alt="" class="social-icon">
+                    </div>
+                </div>
+                <div class="social_right">
+                    <img src="./img/sponsor1.png" alt="" class="sponsor-icons">
+                    <img src="./img/sponsor2.png" alt="" class="sponsor-icons">
+                    <img src="./img/sponsor3.png" alt="" class="sponsor-icons">
+                    <img src="./img/sponsor4.png" alt="" class="sponsor-icons">
                 </div>
             </div>
-            <div class="container">
-                <div class="socialmedia">
-                    <div class="social_left">
-                        <div class="social">
-                            <img src="./img/vk.svg" alt="" class="social-icon">
-                        </div>
-                        <div class="social">
-                            <img src="./img/fb.svg" alt="" class="social-icon">
-                        </div>
-                        <div class="social">
-                            <img src="./img/ok.svg" alt="" class="social-icon">
-                        </div>
-                        <div class="social">
-                            <img src="./img/yt.svg" alt="" class="social-icon">
-                        </div>
-                        <div class="social">
-                            <img src="./img/insta.svg" alt="" class="social-icon">
-                        </div>
-                    </div>
-                    <div class="social_right">
-                        <img src="./img/sponsor1.png" alt="" class="sponsor-icons">
-                        <img src="./img/sponsor2.png" alt="" class="sponsor-icons">
-                        <img src="./img/sponsor3.png" alt="" class="sponsor-icons">
-                        <img src="./img/sponsor4.png" alt="" class="sponsor-icons">
-                    </div>
-                </div>
-                <div class="politicy">
-                    <p class="politicy-left">2007-2019 © Компания АВС-электро. Информация на сайте не является публичной офертой.</p>
-                    <a href="#!" class="politicy-middle">Полика конфеденциальности</a>
-                    <div class="politicy-right">
-                        <img src="./img/visa.png" alt="" class="politicy-icons">
-                        <img src="./img/mastercard.png" alt="" class="politicy-icons">
-                        <img src="./img/maestro.png"alt='' class="politicy-icons">
-                        <img src="./img/sber.png" alt="" class="politicy-icons">
-                    </div>
+            <div class="politicy">
+                <p class="politicy-left">2007-2019 © Компания АВС-электро. Информация на сайте не является публичной
+                    офертой.</p>
+                <a href="#!" class="politicy-middle">Полика конфеденциальности</a>
+                <div class="politicy-right">
+                    <img src="./img/visa.png" alt="" class="politicy-icons ">
+                    <img src="./img/mastercard.png" alt="" class="politicy-icons">
+                    <img src="./img/maestro.png" alt='' class="politicy-icons">
+                    <img src="./img/sber.png" alt="" class="politicy-icons">
                 </div>
             </div>
-        </footer>
-        <script src="./js/main.js"></script>
+        </div>
+    </footer>
+    <footer class="mobile">
+        <div class="container">
+            <div class="mobile__footer">
+                <div class="main__logo">
+                    <div class="red__box">
+                        <img src="./img/logo.svg" alt="" class="logo">
+                    </div>
+                    <img src="./img/sublogo.svg" alt="" class="sublogo">
+                </div>
+                <div class="politicy politicy_mobile">
+                    <p class="politicy-left">2007-2019 © Компания АВС-электро.<br> Информация на сайте не является<br>
+                        публичной офертой.</p>
+                    <a href="#!" class="politicy-middle mobile_politicy-middle">Полика конфеденциальности</a>
+                </div>
+                   
+                    <div class="mobile__footer_media">
+                        <div class="politicy-right mobile_politicy-icons">
+                            <img src="./img/visa.png" alt="" class="politicy-icons mobile_politicy-icon">
+                            <img src="./img/mastercard.png" alt="" class="politicy-icons mobile_politicy-icon">
+                            <img src="./img/maestro.png" alt='' class="politicy-icons mobile_politicy-icon">
+                            <img src="./img/sber.png" alt="" class="politicy-icons mobile_politicy-icon">
+    
+                        </div>
+                        <div class="social_left social__mobile">
+                            <div class="social mobile_social-icon">
+                                <img src="./img/vk.svg" alt="" class="social-icon ">
+                            </div>
+                            <div class="social mobile_social-icon">
+                                <img src="./img/fb.svg" alt="" class="social-icon ">
+                            </div>
+                            <div class="social mobile_social-icon">
+                                <img src="./img/ok.svg" alt="" class="social-icon ">
+                            </div>
+                            <div class="social mobile_social-icon">
+                                <img src="./img/yt.svg" alt="" class="social-icon ">
+                            </div>
+                            <div class="social mobile_social-icon"> 
+                                <img src="./img/insta.svg" alt="" class="social-icon ">
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="social_right mobile_sponsors">
+                <img src="./img/sponsor1.png" alt="" class="sponsor-icons mobile__sponsor-icons">
+                <img src="./img/sponsor2.png" alt="" class="sponsor-icons">
+                <img src="./img/sponsor3.png" alt="" class="sponsor-icons">
+                <img src="./img/sponsor4.png" alt="" class="sponsor-icons">
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

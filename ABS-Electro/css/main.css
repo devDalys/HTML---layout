@@ -496,7 +496,11 @@
     color: #2B2A29;
 }
 .business_section{
-    padding-top: 72px;
+    background: #F2F4F7;
+    padding-left: 24px;
+    border-radius: 4px;
+    padding-top: 24px;
+    margin-top: 48px;
 }
 .business_section_title{
     display: flex;
@@ -584,6 +588,12 @@
     font-size: 14px;
     cursor: pointer;
 }
+.submit__info{
+    margin-top:20px ;
+    font-weight: normal;
+    font-size: 12px;
+    color:#999999 ;
+}
 .socialmedia{
     padding-top: 48px;
     display: flex;
@@ -628,4 +638,115 @@
 .politicy-icons{
     cursor: pointer;
     margin-left: 16px;
+}
+.mobile{
+    display: none;
+}
+.header__mobile-top{
+    width: 100%;
+    display: flex;
+    background: #2B2A29;
+    align-items: center;
+    height: 64px;
+    justify-content: space-between;
+}
+.mobile-logo{
+    padding-left: 16px;
+    margin-right: 31px;
+
+}
+.mobile__address{
+    color: white;
+    margin-right: 16px;
+}
+.mobile__btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 118px;
+    height: 36px;
+    margin-right: 16px;
+}
+.mobile-city{
+    margin-right: 52px;
+}
+.mobile__footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile__footer_media{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.social__mobile{
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mobile_sponsors{
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 48px;
+}
+.mobile__sponsor-icons{
+    margin: 0px;
+}
+.mobile_politicy-icon{
+    margin-left: 0px;
+}
+.mobile_politicy-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile_social-icon{
+    margin-right: 0px;
+}
+.politicy_mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.mobile_politicy-middle{
+    padding-top: 8px;
+}
+.mobile__header{
+    display: none;
+    flex-direction: column;
+}
+.mobile__find{
+    margin: 9px auto;
+    width: 70%;
+}
+.mobile__find_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile_header__main_btns{
+    height: 100%;
+    align-items: center;
+}
+.mobile__find_section{
+    margin-left: 16px;
+    margin-right: 16px;
+    /* margin: 9px auto; */
+}
+.total__price{
+    margin-left: 16px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2B2A29;
+
 }
