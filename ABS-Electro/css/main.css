@@ -170,7 +170,7 @@
 .find__catalog{
     display: flex;
     justify-content: space-between;
-    width: 814px;
+    width: 57%;
     height: 48px;
     margin-right: 40px;
     border:1px #C8CACC solid ;
@@ -219,7 +219,7 @@
 .header__main_btns{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 25%;
     height: 48px;
 }
@@ -240,7 +240,7 @@
 .header__main-section-bot{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     min-width: 100%;
 }
 .call-number{

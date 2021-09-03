@@ -1,0 +1,78 @@
+@media screen and (min-width:1334px) and (max-width:1448px ){
+    .container{
+        width: 1313px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1334px ){
+    .container{
+        width: 978px;
+    }
+    .find__catalog{
+        width: 40%;
+    }
+    .address__street{
+        margin-right: 14px;
+    }
+    .adress__street-text{
+        white-space: nowrap
+    }
+    .address__city{
+        margin-right: 17px;
+    }
+    .loyality{
+        display: none;
+    }
+    .ship{
+        margin-right: 16px;
+    }
+    .call-number{
+        white-space: nowrap
+    }
+    .email-text{
+        margin-right: 10px;
+    }
+    .footer-title{
+        white-space: nowrap;
+    }
+    .footer_contacts {
+        width: 10%;
+        margin-right: 52px;
+        white-space: nowrap;
+    }
+    
+    .footer_block{
+        margin-right: 38px;
+    }
+    .politicy-right{
+        display: flex;
+    }
+    .container.footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .points{
+        display: none;
+    }
+    .header__main_section-top{
+        justify-content: flex-start;
+    }
+    .header_btns{
+        margin-right: 32px;
+    }
+    .politicy{
+        flex-wrap: wrap;
+    }
+    .politicy-middle{
+        order: 3;
+        width: 100%;
+        margin-top: 2px;
+    }
+    .main__panel-right{
+        width: 64%;
+    }
+    /* .header__main-section-bot * {
+        font-size: 11px;
+    } */
+}
+
