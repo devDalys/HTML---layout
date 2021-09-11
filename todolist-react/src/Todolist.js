@@ -34,12 +34,12 @@ function Todolist (){
     <div className="App">
      <header className = 'app__header'>
        <input type="checkbox" name="select__all" id="select__all" />
-       <h4 className="main__title">Список дел: </h4>
+       <h4 className="main__title">СПИСОК ЗАДАЧ: </h4>
        <button className = "add__btn" onClick = {openForm}>
        </button>
      </header>
-     <Listitem item = {item} onDeleteItem = {deleteItem}  />
      {showForm &&  <CreateTask onFormSubmit = {addItem} onCloseForm = {CloseForm} lastChildId = {id} />}
+     <Listitem item = {item} onDeleteItem = {deleteItem}  />
     </div>
     
     )

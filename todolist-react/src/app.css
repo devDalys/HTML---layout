@@ -2,14 +2,17 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
 }
 .App{
     margin: 10px auto;
-    background: rgb(231, 229, 229);
     width: 600px;
 }
 .app__header{
-    background: rgb(255, 124, 1);
+    background: rgb(180,95,58);
+    background: linear-gradient(90deg, rgba(180,95,58,1) 0%, rgba(255,196,0,1) 100%);
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -17,6 +20,10 @@
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
+}
+.main__title{
+    color: rgb(255, 255, 255);
+
 }
 .item{
     background: rgb(255, 255, 255);
@@ -34,6 +41,14 @@
     transition: background 0.3s;
 
 }
+.add_task-btn{
+    background: rgb(180,95,58);
+    background: linear-gradient(90deg, rgba(180,95,58,1) 0%, rgba(255,196,0,1) 100%);
+    color: #fff;
+    border: 0;
+    padding: 5px 10px;
+    border-radius:4px
+}
 .delete__item{
     cursor: pointer;
     width: 15px;
@@ -50,7 +65,7 @@
     animation: add__btn-reverse 0.5s  alternate;
 }
 .add__btn:hover{
-    animation: add__btn 0.5s  alternate;
+    animation: add__btn 0.5s  forwards;
     animation-fill-mode: forwards;
 }
 @keyframes add__btn {
@@ -58,7 +73,7 @@
       transform: rotateZ(0deg);
     }
     to {
-      transform: rotateZ(180deg);
+      transform: rotateZ(45deg);
     }
 }
 @keyframes add__btn-reverse {
@@ -69,19 +84,23 @@
       transform: rotateZ(0deg);
     }
 }
+#AddTask__input{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    outline: none;
+    border: none;
+}
 .Addtask{
-    border-radius: 5px;
-    border: rgb(165, 80, 0) 2px solid;
-    margin-top: 200px;
-    transition: margin-top 2s;
-    margin-left: 150px;
+    height: 10px;
+    animation: show_form 0.2s forwards;
+    /* margin-top: 200px; */
     display: flex;
     justify-content: center;
-    top: 5px;
-    position: fixed;
-    width: 300px;
-    height: 100px;
-    background: rgb(255, 124, 1);
+    position: relative;
+    width: 100%;
+    background: rgb(180,95,58);
+    background: linear-gradient(90deg, rgba(180,95,58,1) 0%, rgba(255,196,0,1) 100%);
 }
 .inputForm{
     
@@ -89,15 +108,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
 }
-.hide {
-    display: none;
+@keyframes show_form{from{height: 0px}to{height:100px}}
+@keyframes close_form{from{transform: translateX(0px) }to{transform: translateX(-1100px)}}
+.hide  {
+    height: 100px;
+    
+    animation: close_form 1s ;
+    z-index: 2;
 }
 .closeForm{
+    transform: rotateZ(45deg);
     position: absolute;
-    top: 3px;
-    right: 3px;
-    text-align: center;
-    width: 20px;
-    height: 20px;
+    top: 5px;
+    right: 19px;
+    cursor: pointer;
+    border: 0px;
+    width: 15px;
+    height: 15px;
+    background: url(./img/plus.svg) center center / contain no-repeat;
 }
