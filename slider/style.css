@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;;
+}
+.slider{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider-active{
+   min-width: 60%;
+}
+.slider-mini{
+    max-width: 20%;
+}
+.slider-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
