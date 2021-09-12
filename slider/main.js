@@ -13,6 +13,11 @@ const findActivePic = (event) => {
         }
     }
 }
+const visibleMini =(i)=>{
+    pics_note[i-2].classList.add('visible');
+    pics_note[i-1].classList.add('visible');
+    pics_note[i].classList.add('visible');
+}
 const swipeMiniRigth = () => {
     for (let i = 0; i < pics_note.length-1;i++){
         const temp = pics_note[i].src;
@@ -24,7 +29,8 @@ const swipeMiniLeft=()=>{
     for (let i = pics_note.length-1; i != 0 ;i--){
         const temp = pics_note[i].src;
         pics_note[i].src = pics_note[i-1].src;
-        pics_note[i-1].src = temp;}
+        pics_note[i-1].src = temp;
+    }        
 }
 const left_btn = document.querySelector('.left')
 const rigth_btn = document.querySelector('.right')
@@ -34,17 +40,24 @@ const swipeRigth = (i) => {
         i = 0;
         activePic.src = pics[i].src;
         swipeMiniRigth();
+        visibleMini(i)
+
+
     }
     else if (i !== pics.length - 1 && event.target.classList.contains('right')) {
         i += 1;
         activePic.src = pics[i].src;
         swipeMiniRigth();
+        visibleMini(i)
+
+
        
     }
     if (i == 0 && event.target.classList.contains('left')) {
         i = 2;
         activePic.src = pics[i].src;
         swipeMiniLeft();
+
 
     }
     else if (i !== 0 && event.target.classList.contains('left')) {

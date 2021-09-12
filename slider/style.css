@@ -19,10 +19,15 @@
    min-width: 60%;
 }
 .slider-mini{
-    max-width: 20%;
+    display: none;
+    height: 100%;
+    width: 20%;
 }
 .slider-bot{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.visible{
+    display: flex;
 }
