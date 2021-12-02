@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+.manifest.json
 # production
 
 
