@@ -15,13 +15,20 @@ html {
 .container {
     border-radius: 30px;
     background: #fff;
-    margin: 200px auto;
+    margin: 0 auto;
     padding: 32px;
     width: 100%;
     max-width: 552px;
     min-height: 476px;
 }
-
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+}
 header {
     display: flex;
     width: 100%;
@@ -76,6 +83,7 @@ header {
 .form__selector {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 
 }
 
@@ -84,6 +92,7 @@ header {
 }
 
 .form__selector button {
+    min-width: 73px;
     width: 73px;
     height: 36px;
     background: #EEF0F2;
@@ -173,4 +182,32 @@ header {
 }
 .grey__text{
     color: #808080;
+}
+.start__window{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    /* Soft Shadow */
+
+    box-shadow: 0px -0.11px 16.9495px rgba(183, 187, 225, 0.33);
+    border-radius: 0px;
+}
+.start__btn{
+    width: 198px;
+    height: 56px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 16px 32px;
+    background: inherit;
+
 }

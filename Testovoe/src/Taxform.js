@@ -2,12 +2,10 @@ import React from "react";
 import './App.css'
 
 function declOfNum(n, titles) {
-    console.log(n);
     return titles[n % 10 == 1 && n % 100 != 11 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2];
 }
 
 function Taxform(props) {
-    console.log(props.massive)
     return (
         <div className='list__items'>
             {props.massive.map((item, index) => {
