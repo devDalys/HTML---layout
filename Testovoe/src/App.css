@@ -2,14 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
-    font-weight: 600;
-
+    font-weight: 600
 }
-
+#root{
+    width: 100%;
+    height: 100vh;
+}
 html {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, .3)
 }
 
 .container {
@@ -19,171 +21,186 @@ html {
     padding: 32px;
     width: 100%;
     max-width: 552px;
-    min-height: 476px;
+    min-height: 476px
 }
-.App{
+
+.App {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
-    width: 100%;
-    height: 100%;
+    height: 100%
 }
-header {
+
+.App, header {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 100%
+}
+
+header {
+    justify-content: space-between
 }
 
 .closeForm {
     cursor: pointer;
     border: none;
-    background: inherit;
+    background: inherit
 }
 
 .description {
-    color: #808080;
+    color: grey;
     padding-top: 16px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 24px
 }
 
 .input__title {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     margin-top: 24px;
     margin-bottom: 16px;
-    color: #000;
+    color: #000
 }
 
 .input {
     width: 100%;
     height: 40px;
     padding: 10px 8px;
-    border: 1px solid #DFE3E6;
+    border: 1px solid #dfe3e6;
     border-radius: 3px;
-    margin-bottom: 8px;
+    margin-bottom: 8px
 }
 
-.input::-webkit-input-placeholder { /* WebKit browsers */
-    color: #BEC5CC;
+.input::-webkit-input-placeholder {
+    color: #bec5cc
 }
 
 .input__btn {
-    color: #EA0029;
+    color: #ea0029;
     border: none;
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
-    background: inherit;
+    background: inherit
 }
 
 .form__selector {
     display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
-
+    flex-wrap: wrap
 }
 
 .form__selector p {
-    margin-right: 16px;
+    margin-right: 16px
 }
 
 .form__selector button {
     min-width: 73px;
     width: 73px;
     height: 36px;
-    background: #EEF0F2;
-    color: #000000;
+    background: #eef0f2;
+    color: #000;
     border-radius: 50px;
     text-align: center;
     border: none;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     margin-left: 16px;
     cursor: pointer;
-    transition: all 0.25s;
+    transition: all .25s
 }
 
-.form__selector button:hover {
-    color: #000000;
-    transition: all 0.25s;
-    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
-    color: #ffffff;
+.form__selector .active, .form__selector button:hover {
+    color: #000;
+    transition: all .25s;
+    color: #fff
 }
-.form__selector .active{
-    color: #000000;
-    transition: all 0.25s;
-    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
-    color: #ffffff;
+
+.add__btn, .form__selector .active, .form__selector button:hover {
+    background: linear-gradient(255.35deg, #dc3131 .83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56
 }
+
 .add__btn {
     width: 100%;
     height: 56px;
     text-align: center;
-    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
-    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
     border-radius: 6px;
     cursor: pointer;
     border: none;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #ffffff;
-    margin-top: 40px;
-    transition: all 0.2s;
+    color: #fff;
+    margin-top: 40px
+}
 
+.add__btn, .add__btn:hover {
+    box-shadow: 0 0 24px rgba(234, 0, 41, .33);
+    transition: all .2s
 }
-.add__btn:hover{
-    background: #EA0029;
-    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
-    transition: all 0.2s;
 
+.add__btn:hover {
+    background: #ea0029
 }
-.add__btn:disabled{
-    background: #BEC5CC;
+
+.add__btn:disabled {
+    background: #bec5cc
 }
-.list__items{
-    animation: listAnim 1s;
+
+.list__items {
+    animation: listAnim 0.6s;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow-y: scroll;
+    max-height: 285px;
 }
-.list__items-item{
+
+.list__items-item {
     display: flex;
     align-items: center;
+    grid-column-gap: 10px;
     column-gap: 10px;
     width: 100%;
-    border-bottom: 1px solid #DFE3E6;
+    border-bottom: 1px solid #dfe3e6;
     margin-bottom: 16px;
-    padding:16px 0px;
+    padding: 16px 0
 }
-.list__items-item input{
-    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
-    border-radius: 6px;
 
+.list__items-item input {
+    background: linear-gradient(255.35deg, #dc3131 .83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
+    border-radius: 6px
 }
+
 @keyframes listAnim {
-    from{opacity: 0%}
-    to{opacity: 100%}
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
-.error__input{
-    color: #EA0029;
-    font-size: 10px;
+
+.error__input {
+    color: #ea0029;
+    font-size: 10px
 }
-.input.error__input{
-    border: 1px solid #EA0029;
+
+.input.error__input {
+    border: 1px solid #ea0029
 }
-.hide{
-    display: none !important;
+
+.hide {
+    display: none !important
 }
-.grey__text{
-    color: #808080;
+
+.grey__text {
+    color: grey
 }
-.start__window{
+
+.start__window {
     position: fixed;
     display: flex;
     align-items: center;
@@ -192,22 +209,20 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
-    /* Soft Shadow */
-
-    box-shadow: 0px -0.11px 16.9495px rgba(183, 187, 225, 0.33);
-    border-radius: 0px;
+    background: linear-gradient(255.35deg, #dc3131 .83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
+    box-shadow: 0 -.11px 16.9495px rgba(183, 187, 225, .33);
+    border-radius: 0
 }
-.start__btn{
+
+.start__btn {
     width: 198px;
     height: 56px;
     text-align: center;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     border-radius: 6px;
     padding: 16px 32px;
-    background: inherit;
-
+    background: inherit
 }

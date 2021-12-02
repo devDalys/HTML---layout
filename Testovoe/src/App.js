@@ -20,7 +20,7 @@ function App() {
             windowMask.classList.add('hide')
         }
     })
-    window.addEventListener('click', (e) => {
+    window.addEventListener('mousedown', (e) => {
         if (e.target.classList.contains('App')) {
             setWindow(true);
         }
@@ -109,7 +109,9 @@ function App() {
                         <button className='changeBtns'>Срок</button>
                     </div>
                 </div>
-                <button className="add__btn">Добавить</button>
+                <button onClick={() => {
+                    valid()
+                }} className="add__btn">Добавить</button>
             </div>
         </div>
     );
