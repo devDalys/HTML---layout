@@ -12,7 +12,8 @@ function Taxform(props) {
                 while (index < 100) {
                     return (
                         <div className='list__items-item'>
-                            <input type="checkbox"/>
+                                <input type="checkbox" id={'input-' + index}/>
+                                <label htmlFor={'input-' + index}></label>
                             <p>{Math.round(item)} {declOfNum(Math.round(item), ['рубль', 'рубля', 'рублей'])} <span
                                 className='grey__text'>в {index + 1}-й год </span></p>
                         </div>
