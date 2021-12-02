@@ -155,7 +155,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     overflow-y: scroll;
-    max-height: 200px;
+    max-height: 274px;
 }
 
 .list__items-item {
